@@ -7,10 +7,7 @@ public class MemberDTO {
 	private String name;
 	private String tel;
 	
-	private boolean clang;
-	private boolean cpp;
-	private boolean phyton;
-	private boolean java;
+	private String[] subs;
 	private boolean admin;
 	
 	
@@ -18,6 +15,7 @@ public class MemberDTO {
 	public String getId() {
 		return id;
 	}
+
 	public void setId(String id) {
 		this.id = id;
 	}
@@ -39,30 +37,13 @@ public class MemberDTO {
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
-	public boolean isClang() {
-		return clang;
+	public String[] getSubs() {
+		return subs;
 	}
-	public void setClang(boolean clang) {
-		this.clang = clang;
+	public void setSubs(String[] subs) {
+		this.subs = subs;
 	}
-	public boolean isCpp() {
-		return cpp;
-	}
-	public void setCpp(boolean cpp) {
-		this.cpp = cpp;
-	}
-	public boolean isPhyton() {
-		return phyton;
-	}
-	public void setPhyton(boolean phyton) {
-		this.phyton = phyton;
-	}
-	public boolean isJava() {
-		return java;
-	}
-	public void setJava(boolean java) {
-		this.java = java;
-	}
+	
 	public boolean isAdmin() {
 		return admin;
 	}
